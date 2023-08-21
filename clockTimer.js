@@ -55,7 +55,7 @@ const ClockTimer = () => {
         <button
           onClick={() => {
             clearInterval(id.current);
-            setTime(0);
+            setTime({ hr: 0, min: 0, sec: 0 });
           }}
         >
           Reset
